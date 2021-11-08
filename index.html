@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST API PROJECT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="/index.html">Fast<span>API</span></a>
+
+            <img id="mobile-menu-id" class="mobile-menu" src="/assests/menu.svg" alt="Menu">
+
+            <nav>
+                <img id="exit-menu-id" class="exit-menu" src="/assests/exit.svg" alt="Exit Menu">
+                <ul class="primary-nav">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Demo</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="golive"><a href="#">GoLive</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="container">
+
+            <div class="left-col">
+                <p class="subhead">Its the Fastest Python API &amp; its defo faster</p>
+                <h1>A Python Web Framework Thats Doesnt Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for Free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="/assests/watch.svg" alt="Watch a Video">
+                        Watch a Video
+                    </a>
+                </div>
+
+            </div>
+
+            <img src="/assests/illustration.svg" class="hero-img" alt="icon illustration">
+
+        </div>
+    </section>
+
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Fast</li>
+                <li>Fast to code</li>
+                <li>Fewer bugs</li>
+                <li>Short</li>
+                <li>Easy</li>
+                <li>Standards-based</li>
+                <li>Robust</li>
+            </ul>
+
+            <img src="/assests/holding-phone.jpg" alt="a person with phone">
+        </div>
+    </section>
+
+
+    <section class="testimonails-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/assests/person.jpg" alt="">
+
+                    <blockquote>"[...] I'm using FastAPI a ton these days. [...] I'm actually planning to use it for all
+                        of my team's ML services at Microsoft. Some of them are getting integrated into the core Windows
+                        product and some Office products."</blockquote>
+                    <cite>-Kabir Khan - Microsoft</cite>
+                </li>
+                <li>
+                    <img src="/assests/person.jpg" alt="">
+
+                    <blockquote>"We adopted the FastAPI library to spawn a REST server that can be queried to obtain
+                        predictions. [for Ludwig]"</blockquote>
+                    <cite>-Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - Uber</cite>
+                </li>
+                <li>
+                    <img src="/assests/person.jpg" alt="">
+
+                    <blockquote>"Netflix is pleased to announce the open-source release of our crisis management
+                        orchestration framework: Dispatch! [built with FastAPI]"</blockquote>
+                    <cite>Kevin Glisson, Marc Vilanova, Forest Monsen - Netflix</cite>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="msg">Message</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-msg" value="Submit">
+                </form>
+            </div>
+
+
+            <div class="contact-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204559.51901550966!2d-4.5642719479811165!3d36.764749941003416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f6698d30d151%3A0x403d278a576e680!2zTcOhbGFnYSwgU3BhaW4!5e0!3m2!1sen!2sin!4v1633608943896!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    var mobile = document.getElementById('mobile-menu-id');
+    var nav = document.querySelector('nav');
+    var mobile_exit = document.getElementById('exit-menu-id');
+
+    mobile.addEventListener('click', function () {
+        nav.style.display = "block";
+    });
+
+    mobile_exit.addEventListener('click', function () {
+        nav.style.display = "none";
+    });
+</script>
+
+</html>
